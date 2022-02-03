@@ -12,7 +12,7 @@ struct StatisticsView: View {
     
     var body: some View {
         List(state.divisions, id: \.self.code) { division in
-            NavigationLink(destination: AbsenceView(division: division)) {
+            NavigationLink(destination: AbsenceView(absence: Absence(date: Date(), students: division.students))) {
                 DivisionItem(div: division)
             }
         }

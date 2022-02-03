@@ -10,6 +10,24 @@ import Foundation
 class Division{
     let code: String
     var students: [Student] = []
+    var absences: [Absence] = []
+    
+    func getAbsence(for date: Date) -> Absence? {
+        return absences.first {
+            let comparison = Calendar.current.compare($0.takeOn, to: date, toGranularity: .day)
+            return comparison == .orderedSame
+        }
+    }
+    
+    func createOrGetAbsence(for date: Date) -> Absence{
+        if let existingAbsence = getAbsence(for: date) {
+            return existingAbsence
+        } else {
+            let new = Absence(date: date, students: students)
+            absences.append(new)
+            return new
+        }
+    }
     
     init(cd: String){
         self.code = cd
