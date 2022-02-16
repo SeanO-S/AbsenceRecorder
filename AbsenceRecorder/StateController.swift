@@ -8,9 +8,20 @@
 import Foundation
 
 class StateController: ObservableObject {
-    @Published var divisions: [Division]
+    @Published var divisions: [Division] = []
     
     init() {
-        self.divisions = Division.examples
+        loadFrom()
+    }
+    
+    
+    func loadFrom() {
+        if let loaded: [Division] = FileManager.default.load(from: "divisions.json") {
+            divisions = loaded
+        }
+    }
+    
+    func saveTo() {
+        FileManager.default.save(to: "divisions.json", object: divisions)
     }
 }

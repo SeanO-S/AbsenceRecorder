@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031F9FB727BD18C50004A828 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031F9FB627BD18C50004A828 /* FileManager.swift */; };
 		034CE81827A0A875009D33E5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CE81727A0A875009D33E5 /* Date.swift */; };
 		034CE81A27A0AD3C009D33E5 /* DivisionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CE81927A0AD3C009D33E5 /* DivisionItem.swift */; };
 		035B46C2279F56FE003A0FB7 /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035B46C1279F56FE003A0FB7 /* AbsenceRecorderApp.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		031F9FB627BD18C50004A828 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		034CE81727A0A875009D33E5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		034CE81927A0AD3C009D33E5 /* DivisionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItem.swift; sourceTree = "<group>"; };
 		035B46BE279F56FE003A0FB7 /* AbsenceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsenceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				034CE81727A0A875009D33E5 /* Date.swift */,
+				031F9FB627BD18C50004A828 /* FileManager.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				035B46C4279F56FE003A0FB7 /* DivisionsView.swift in Sources */,
 				034CE81827A0A875009D33E5 /* Date.swift in Sources */,
 				03AF1F2A27A9E417001EA1AA /* RootTabView.swift in Sources */,
+				031F9FB727BD18C50004A828 /* FileManager.swift in Sources */,
 				036E87EC27AC7C6E0072E62A /* StudentAbsence.swift in Sources */,
 				035B46EF279F611B003A0FB7 /* Student.swift in Sources */,
 				036E87EA27AC772E0072E62A /* AbsenceItem.swift in Sources */,

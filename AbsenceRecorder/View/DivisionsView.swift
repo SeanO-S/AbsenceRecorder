@@ -17,7 +17,7 @@ struct DivisionsView: View {
                     DivisionItem(div: division)
                 }
             }
-            
+            .onAppear(perform: { state.saveTo()})
             .navigationTitle(currentDate.shortenDate())
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
